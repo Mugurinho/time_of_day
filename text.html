@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="main.css">
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+<body onload="mySpinner()" style="margin:2;">
+<a href="text.html" id="a1">Home</a>
+<a href="time.html" id="a1">Time</a>
+<a href="video.html" id="a3">Video</a>
+<a href="randomMessages.html" id="a2">Messages</a>
+<a href="projects.html" id="a2">Back to projects page</a>
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<h4>Clock simulator: What time of day is it?</h4>
+<input id="time" placeholder="0 to 24">
+<br><br>
+<button type="button" class="button button3" onclick="timeInput()">Submit</button>
+<button type="button" class="button button5" onclick="myRefresh()">Refresh</button>
+<p id="alert"></p>
+</div>
+<script src="text.js"></script>
+</body>
+</html>

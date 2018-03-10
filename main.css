@@ -1,0 +1,212 @@
+/**************TEXT.HTML************************/
+body{
+	  transition: background-color 5s;
+	  -webkit-transition: background-color 5s;
+}
+
+#time{
+  font-size: 300%;
+  font-family: Orbitron, sans-serif;
+}
+
+h4{
+  font-size: 200%;
+  font-family: Orbitron, sans-serif;
+  color: black;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/**************TIME.HTML***********************/
+#body1{
+	transition: background 20s;
+	-webkit-transition: background 20s;
+}
+
+#txt{
+	font-size: 500%;
+	font-family: Orbitron, sans-serif;
+	text-align: center;
+}
+
+#welcome{
+    font-size: 200%;
+    font-family: Orbitron, sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+}
+
+label{
+	font-size: 200%;
+	font-family: Orbitron, sans-serif;
+	margin-left: 40%;
+}
+
+.alert{
+    padding: 40px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    font-size: 200%;
+    font-family: Lucida Console, Monaco, monospace;
+    text-align: center;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover{
+    color: red;
+}
+
+#alert{
+	  width: 100%;
+    padding: 20px 0;
+    margin-top:10px;
+    font-size: 150%;
+    font-family: Lucida Console, Monaco, monospace;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	font-size: 150%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.alert {
+    opacity: 0.9;
+    -webkit-transition: opacity 2s ease;
+}
+
+.alert:hover {
+    opacity: 0.5;
+}
+
+/*********************FOR IFRAME VIDEO***********************************/
+*{ 
+  box-sizing: border-box; 
+ }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+  top: 0;
+  color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info #home { display: block; color: #fff; text-decoration: none; background: rgba(255,255,255,0.23); transition: .6s background; border-bottom: none; margin: 2rem auto; text-align: center; padding: 5%;}
+#home:hover{
+  background: rgba(0,0,0,0.5);
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+hr{
+  border: 1px solid gray;
+}

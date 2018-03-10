@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body id="body1" onload="startTime();">
+<a href="text.html" id="a1">Home</a>
+<a href="video.html" id="a3">Video</a>
+<a href="randomMessages.html" id="a2">Messages</a>
+<h4 id="welcome"></h4>
+<label>Time: </label>
+<div id="txt"></div>
+<div class="alert" id="morning">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <div id="morningMsg"></div>
+</div>
+<div class="alert" id="afternoon">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <div id="afternoonMsg"></div>
+</div>
+<div class="alert" id="evening">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <div id="eveningMsg"></div>
+</div>
+<script src = "text.js"></script>
+<script src = "randomMorningMessages.js"></script>
+<script src = "randomAfternoonMessages.js"></script>
+<script src = "randomEveningMessages.js"></script>
+</body>
+</html>

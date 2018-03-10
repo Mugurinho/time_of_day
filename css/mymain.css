@@ -1,0 +1,161 @@
+/**************TEXT.HTML************************/
+body{
+	  transition: background-color 5s;
+	  -webkit-transition: background-color 5s;
+}
+
+#time{
+  font-size: 300%;
+  font-family: Orbitron, sans-serif;
+}
+
+h4{
+  font-size: 200%;
+  font-family: Orbitron, sans-serif;
+  color: black;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/**************TIME.HTML***********************/
+#body1{
+	transition: background-color 30s;
+	-webkit-transition: background-color 30s;
+}
+
+#txt{
+	font-size: 500%;
+	font-family: Orbitron, sans-serif;
+	text-align: center;
+}
+
+#welcome{
+    font-size: 200%;
+    font-family: Orbitron, sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+}
+
+label{
+	font-size: 200%;
+	font-family: Orbitron, sans-serif;
+	margin-left: 40%;
+}
+
+.alert{
+    padding: 40px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-size: 200%;
+    font-family: Lucida Console, Monaco, monospace;
+    text-align: center;
+    transition: all 4s ease;
+}
+
+.alert:hover{
+    opacity: 0.6;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover{
+    color: red;
+}
+
+#alert{
+	  width: 100%;
+    padding: 20px 0;
+    margin-top:10px;
+    font-size: 150%;
+    font-family: Lucida Console, Monaco, monospace;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	font-size: 150%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: black;
+}

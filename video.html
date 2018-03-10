@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body onload="New()">
+<a href="text.html" id="a1">Home</a>
+<a href="time.html" id="a2">Time</a>
+<a href="randomMessages.html" id="a3">Messages</a>
+<div class="video-background" id = "myVideo">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/cY55FQSoOtw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=cY55FQSoOtw" id = "myFrame" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="vidtop-content">
+<div class="vid-info">
+	  <h4 id="welcome" style="color:white;"></h4>
+		<div id="txt"></div>
+	 <a id="home" href="time.html">Home</a>
+     <a id="home" href="#" onclick="Change()">Change background</a>
+     <a id="home" href="#" onclick="myRefresh()">Refresh</a>
+   
+  </div>
+</div>
+
+<script>
+function New(){
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    var myDate = new Date();
+    if(myDate.getHours()<12){
+        var loc = "https://www.youtube.com/embed/cY55FQSoOtw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=cY55FQSoOtw";
+        document.getElementById('myFrame').setAttribute('src', loc);
+    }
+    else if(myDate.getHours()>=12 && myDate.getHours()<17){
+        var loc = "https://www.youtube.com/embed/3AILaTeOc8s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=3AILaTeOc8s";
+        document.getElementById('myFrame').setAttribute('src', loc);
+    }
+    else if(myDate.getHours()>=17 && myDate.getHours()<=24){
+        var loc = "https://www.youtube.com/embed/zguT-Ne4ko8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=zguT-Ne4ko8";
+        document.getElementById('myFrame').setAttribute('src', loc);
+    }
+  }
+
+function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+  }
+</script>
+
+<script>
+     function Change(){
+        var loc = "https://www.youtube.com/embed/3AILaTeOc8s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=3AILaTeOc8s";
+        document.getElementById('myFrame').setAttribute('src', loc);
+       
+    }
+</script>
+<script src = "text.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+</head>
+<body onload="startTime2();">
+<a href="text.html" id="a1">Home</a>
+<a href="time.html" id="a1">Time</a>
+<a href="video.html" id="a3">Video</a>
+<h3>Morning</h3>
+<p id="morningMsg"></p>
+<h3>Afternoon</h3>
+<p id="afternoonMsg"></p>
+<h3>Evening</h3>
+<p id="eveningMsg"></p>
+
+<div class="container">
+    <a href="#" class="top"><img src="city-sunset-sunrise-lens-flare.jpg"></a>
+    <a href="#" class="bottom"><img src="pexels-photo-30360.jpg"></a>
+</div>
+
+<style>
+.container {
+    position: relative;
+    margin: 0;
+}
+
+img {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 20s ease;
+}
+
+.bottom img:hover {
+    opacity: 0;
+}
+</style>
+<script src = "randomMorningMessages.js"></script>
+<script src = "randomAfternoonMessages.js"></script>
+<script src = "randomEveningMessages.js"></script>
+</body>
+</html>
